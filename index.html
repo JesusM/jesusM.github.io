@@ -7,6 +7,7 @@
     <meta name="description" content="Portfolio de Jesús Manzano, Android Software Engineer.">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3b66ef94d5.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -58,6 +59,9 @@
             border-radius: 8px;
             text-decoration: none;
             transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         .buttons a:hover {
             background: #1769aa;
@@ -143,9 +147,9 @@
         <h1>Jesús Manzano</h1>
         <h2>Android Software Engineer</h2>
         <div class="buttons">
-            <a href="https://github.com/JesusM" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:jesus@example.com">Email</a>
+            <a href="https://github.com/JesusM" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:jesus@example.com"><i class="fas fa-envelope"></i> Email</a>
         </div>
 
         <section class="experience">
@@ -171,19 +175,18 @@
                     <span>2015 - 2020</span>
                     <p>Worked on the Plex Android app, including multimedia features and streaming support across multiple Android-based platforms.</p>
                 </li>
-              
             </ul>
         </section>
 
         <section class="apps">
-            <h2>Mis Apps Personales</h2>
+            <h2>My Personal Apps</h2>
             <div class="apps-grid">
                 <a href="https://play.google.com/store/apps/details?id=com.jesusm.passesreader" target="_blank" rel="noopener noreferrer" class="app-card">
                     <h3>Passes Reader</h3>
                     <p>View .pkpass files (Apple Wallet) directly on Android devices.</p>
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.jesusm.tmdb.kmp" target="_blank" rel="noopener noreferrer" class="app-card">
-                    <h3>TMDb Explorer (KMP)</h3>
+                    <h3>WhatToWatch (TMDb)</h3>
                     <p>Kotlin Multiplatform project helping to explore movies and TV shows using the TMDb API.</p>
                 </a>
             </div>
