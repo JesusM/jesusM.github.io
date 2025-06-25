@@ -16,6 +16,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            padding: 1rem;
         }
         .card {
             background: white;
@@ -23,8 +24,8 @@
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 400px;
-            width: 90%;
+            max-width: 700px;
+            width: 100%;
         }
         .card img {
             width: 120px;
@@ -61,6 +62,74 @@
         .buttons a:hover {
             background: #1769aa;
         }
+        .apps, .experience {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .apps h2, .experience h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .app-card {
+            display: block;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .app-card h3 {
+            margin: 0 0 0.5rem;
+            color: #2196f3;
+        }
+        .app-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .experience ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .experience li {
+            background: #f8f9fa;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .experience h3 {
+            margin: 0 0 0.3rem;
+            color: #2196f3;
+        }
+        .experience span {
+            display: block;
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        @media (min-width: 600px) {
+            .apps-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
         footer {
             margin-top: 2rem;
             font-size: 0.85rem;
@@ -73,12 +142,46 @@
         <img src="img/photo.jpg" alt="Foto de Jesús Manzano">
         <h1>Jesús Manzano</h1>
         <h2>Android Software Engineer</h2>
-        
         <div class="buttons">
             <a href="https://github.com/JesusM" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:jesus@example.com">Email</a>
         </div>
+
+        <section class="experience">
+            <h2>Experiencia Profesional</h2>
+            <ul>
+                <li>
+                    <h3>Android Software Engineer - eDreams ODIGEO</h3>
+                    <span>2021 - Presente</span>
+                    <p>Desarrollo de apps móviles de alto rendimiento para el sector de viajes.</p>
+                </li>
+                <li>
+                    <h3>Android Software Engineer - Plex Inc.</h3>
+                    <span>2019 - 2021</span>
+                    <p>Trabajo en la app de Plex para Android, incluyendo funcionalidades multimedia y soporte de streaming.</p>
+                </li>
+                <li>
+                    <h3>Android Engineer - Freelance</h3>
+                    <span>2017 - 2019</span>
+                    <p>Proyectos móviles para clientes internacionales y desarrollo de apps personales.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="apps">
+            <h2>Mis Apps Personales</h2>
+            <div class="apps-grid">
+                <a href="https://play.google.com/store/apps/details?id=com.jesusm.passesreader" target="_blank" rel="noopener noreferrer" class="app-card">
+                    <h3>Passes Reader</h3>
+                    <p>View .pkpass files (Apple Wallet) directly on Android devices.</p>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.jesusm.tmdb.kmp" target="_blank" rel="noopener noreferrer" class="app-card">
+                    <h3>TMDb Explorer (KMP)</h3>
+                    <p>Explore movies and TV shows using the TMDb API. Kotlin Multiplatform project.</p>
+                </a>
+            </div>
+        </section>
 
         <footer>
             © 2025 Jesús Manzano
